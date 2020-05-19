@@ -12,7 +12,7 @@ pipeline
       {
        sh """
         echo "enter a var name"
-        read var
+        #read var
         echo "you have entered"
         echo $var
        """
