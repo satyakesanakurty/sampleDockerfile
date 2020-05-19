@@ -13,7 +13,7 @@ pipeline
         script{
         def userInput = input(
         id: 'userInput', message: 'enter your cron exp',
-        paramaters : [string(defaultValue: 'None'),]
+        paramaters : [$class: 'TextParameterDefinition',defaultValue: 'None',]
         )
         echo "you have entered ${userInput}"
       }
