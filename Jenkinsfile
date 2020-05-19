@@ -10,11 +10,13 @@ pipeline
       }
       steps
       {
+        script{
         def uerInput = input(
         id: 'userInput', message: 'enter your cron exp',
         paramaters : [string(defaultValue: 'None'),]
         )
         echo "you have entered ${userInput}"
+      }
       }
     }
   }
